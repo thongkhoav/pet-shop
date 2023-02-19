@@ -1,0 +1,49 @@
+.products {
+    padding: 30px 50px;
+    display: flex;
+
+    .left {
+        flex: 1;
+        position: sticky;
+        top: 50px;
+        height: 100%;
+
+        .filterItem {
+            margin-bottom: 30px;
+
+            h2 {
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+
+            .inputItem {
+                margin-bottom: 10px;
+
+                label {
+                    margin-left: 5px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .filter-button {
+            border:none;
+            outline:none;
+            width: 100px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+
+    .right {
+        flex: 3;
+
+        .cateImg {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+}

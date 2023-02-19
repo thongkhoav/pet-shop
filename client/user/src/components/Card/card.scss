@@ -1,0 +1,61 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 2px 0px 6px 5px rgba(0,0,0,0.18);
+  padding: 10px;
+  border-radius: 10px;
+  // margin-bottom: 50px;
+
+  .image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+    span {
+        padding: 5px 10px;
+        border-radius: 8px;
+        color: white;
+        background-color: rgb(117, 169, 40);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 11;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &:hover .extraImg {
+        z-index: 10;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .extraImg {
+        z-index: -1;
+    }
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 16px;
+
+    >span {
+      margin-right: 20px;
+    }
+  }
+}
